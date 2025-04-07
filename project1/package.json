@@ -1,0 +1,21 @@
+{
+  "name": "snapsec_fileuploads",
+  "version": "1.0.0",
+  "description": "App to upload files",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bson": "^6.10.3",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2"
+  }
+}
