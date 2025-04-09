@@ -9,13 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({ extended: false }));
 app.use("/api/files", fileRoutes);
-
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
-      console.log("MongoDB connected");
-      app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-})
-.catch((err) => console.error(err));
+    console.log("MongoDB connected");
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  })
+  .catch((err) => console.error(err));
