@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const fileRoutes = require("./routes/fileRoutes");
 
 dotenv.config();
@@ -8,9 +9,15 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173',
+
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api/files", fileRoutes);
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
