@@ -1,11 +1,11 @@
-# SnapSec Working Directory
+# FileOps Manager
 
-This repository contains files and resources for the SnapSec project. Below is an overview of the directory structure and purpose.
+This repository contains files and resources for the FileOps Manager project. The project provides operations for uploading files, deleting files, editing files, and uploading files via URL. Below is an overview of the directory structure and purpose.
 
 ## Directory Structure
 
 ```
-/SnapSecWorkinDir
+/FileOpsManager
 ├── Readme.md         # Project documentation
 ├── /src              # Source code files
 ├── /docs             # Documentation files
@@ -21,8 +21,15 @@ This repository contains files and resources for the SnapSec project. Below is a
     ```
 2. Navigate to the working directory:
     ```bash
-    cd SnapSecWorkinDir
+    cd FileOpsManager
     ```
+
+## Features
+
+- Upload files from your local system.
+- Delete files from the repository.
+- Edit files directly within the project.
+- Upload files via URL for seamless integration.
 
 ## Contributing
 
